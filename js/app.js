@@ -50,7 +50,7 @@ function shuffle(array) {
 document.body.onload = startGame();
 
 
-// @description function to start a new play 
+// @description function to start a new play
 function startGame(){
     // shuffle deck
     cards = shuffle(cards);
@@ -72,7 +72,7 @@ function startGame(){
     }
     //reset timer
     second = 0;
-    minute = 0; 
+    minute = 0;
     hour = 0;
     var timer = document.querySelector(".timer");
     timer.innerHTML = "0 mins 0 secs";
@@ -153,7 +153,7 @@ function moveCounter(){
     //start timer on first click
     if(moves == 1){
         second = 0;
-        minute = 0; 
+        minute = 0;
         hour = 0;
         startTimer();
     }
@@ -227,7 +227,7 @@ function closeModal(){
 }
 
 
-// @desciption for user to play Again 
+// @desciption for user to play Again
 function playAgain(){
     modal.classList.remove("show");
     startGame();

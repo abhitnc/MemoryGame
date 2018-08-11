@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <title>Memory Game</title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
@@ -14,7 +13,7 @@
 
     <div class="container">
         <header>
-            <h1>Memory Game</h1>
+            <h3>Memory Game</h3>
         </header>
 
         <section class="score-panel">
@@ -35,17 +34,23 @@
         </section>
 
         <ul class="deck" id="card-deck">
-            <li class="card" type="diamond">
-                <i class="fa fa-diamond"></i>
-            </li>
-            <li class="card" type="plane">
-                <i class="fa fa-paper-plane-o"></i>
-            </li>
             <li class="card match" type="anchor">
                 <i class="fa fa-anchor"></i>
             </li>
             <li class="card" type="bolt" >
                 <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card" type="cube">
+                <i class="fa fa-cube"></i>
+            </li>
+            <li class="card" type="plane">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card" type="bomb">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card" type="leaf">
+                <i class="fa fa-leaf"></i>
             </li>
             <li class="card" type="cube">
                 <i class="fa fa-cube"></i>
@@ -62,11 +67,11 @@
             <li class="card" type="diamond">
                 <i class="fa fa-diamond"></i>
             </li>
-            <li class="card" type="bomb">
-                <i class="fa fa-bomb"></i>
+            <li class="card" type="plane">
+                <i class="fa fa-paper-plane-o"></i>
             </li>
-            <li class="card" type="leaf">
-                <i class="fa fa-leaf"></i>
+            <li class="card" type="diamond">
+                <i class="fa fa-diamond"></i>
             </li>
             <li class="card" type="bomb">
                 <i class="fa fa-bomb"></i>
@@ -77,20 +82,15 @@
             <li class="card" type="bicycle">
                 <i class="fa fa-bicycle"></i>
             </li>
-            <li class="card" type="plane">
-                <i class="fa fa-paper-plane-o"></i>
-            </li>
-            <li class="card" type="cube">
-                <i class="fa fa-cube"></i>
-            </li>
+
         </ul>
 
         <div id="popup1" class="overlay">
             <div class="popup">
-                <h2>Congratulations 🎉</h2>
+                <h2>Congo</h2>
                 <a class="close" href=# >×</a>
                 <div class="content-1">
-                    Congratulations you're a winner 🎉🎉
+                    You did it... you're a winner
                 </div>
                 <div class="content-2">
                     <p>You made <span id=finalMove> </span> moves </p>
@@ -98,7 +98,7 @@
                     <p>Rating:  <span id=starRating></span></p>
                 </div>
                 <button id="play-again"onclick="playAgain()">
-                    Play again 😄</a>
+                    Wanna play again? Cick here</a>
                 </button>
             </div>
         </div>

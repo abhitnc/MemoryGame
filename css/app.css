@@ -18,7 +18,7 @@ body {
 
 body {
 	background: #ffffff;
-	font-family: 'Permanent Marker', cursive;
+	font-family: 'Palatino', cursive;
 	font-size: 16px;
 }
 
@@ -29,15 +29,9 @@ body {
 	flex-direction: column;
 }
 
-h1 {
-	font-family: 'Gloria Hallelujah', cursive;
+h3 {
+	font-family: 'Palatino', cursive;
 }
-
-
-/*
- * Styles for the deck of cards
- */
-
 
 .deck {
 	width: 85%;
@@ -104,12 +98,6 @@ h1 {
 	opacity: 0.9;
 }
 
-
-/*
- * Styles for the Score Panel
- */
-
-
 .score-panel {
 	text-align: left;
 	margin-bottom: 10px;
@@ -141,12 +129,6 @@ h1 {
 	margin: 0 1rem;
 }
 
-
-/*
- * Styles for congratulations modal
- */
-
-
 .overlay {
 	position: fixed;
 	top: 0;
@@ -163,7 +145,7 @@ h1 {
 	visibility: visible;
 	opacity: 1;
 }
-  
+
 .popup {
 	margin: 70px auto;
 	padding: 20px;
@@ -172,9 +154,9 @@ h1 {
 	width: 85%;
 	position: relative;
 	transition: all 5s ease-in-out;
-	font-family: 'Gloria Hallelujah', cursive;
+	font-family: 'Palatino', cursive;
 }
-  
+
 .popup h2 {
 	margin-top: 0;
 	color: #333;
@@ -219,86 +201,10 @@ h1 {
 	display: block;
 	margin: 0 auto;
 	width: 50%;
-	font-family: 'Gloria Hallelujah', cursive;
+	font-family: 'Palatino', cursive;
 	color: #ffffff;
 	border-radius: 5px;
 }
-
-/* animations */
-@keyframes flipInY {
-	from {
-		transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
-		animation-timing-function: ease-in;
-		opacity: 0;
-	}
-
-	40% {
-		transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
-		animation-timing-function: ease-in;
-	}
-
-	60% {
-		transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
-		opacity: 1;
-	}
-
-	80% {
-		transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-	}
-
-	to {
-		transform: perspective(400px);
-	}
-}
-
-@keyframes rubberBand {
-	from {
-		transform: scale3d(1, 1, 1);
-	}
-
-	30% {
-		transform: scale3d(1.25, 0.75, 1);
-	}
-
-	40% {
-		transform: scale3d(0.75, 1.25, 1);
-	}
-
-	50% {
-		transform: scale3d(1.15, 0.85, 1);
-	}
-
-	65% {
-		transform: scale3d(.95, 1.05, 1);
-	}
-
-	75% {
-		transform: scale3d(1.05, .95, 1);
-	}
-
-	to {
-		transform: scale3d(1, 1, 1);
-	}
-}
-
-@keyframes pulse {
-	from {
-		transform: scale3d(1, 1, 1);
-	}
-
-	50% {
-		transform: scale3d(1.2, 1.2, 1.2);
-	}
-
-	to {
-		transform: scale3d(1, 1, 1);
-	}
-}
-
-
-/****** Media queries
-***************************/
-
 
 @media (max-width: 320px) {
 	.deck {
@@ -311,9 +217,6 @@ h1 {
 	}
 }
 
-
-/* For Tablets and larger screens
-****************/
 
 @media (min-width: 768px) {
 	.container {
@@ -334,4 +237,3 @@ h1 {
 		width: 60%;
 	}
 }
-
