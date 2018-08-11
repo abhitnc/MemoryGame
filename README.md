@@ -6,4 +6,4 @@
 
 ## Instructions
 
-### This repository is build for the Udacity's FEND Program Project Memory Game.
+This repository is build for the Udacity's FEND Program Project Memory Game.
